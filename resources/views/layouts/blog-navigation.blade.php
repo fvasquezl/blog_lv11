@@ -42,19 +42,16 @@
                 class="hidden text-sky-500 duration-200 hover:rotate-6 md:block"
                 href="/"
         >
-            <svg
-                    class="h-8 w-8"
+            <svg   class="h-8 w-8"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
             >
                 <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                <path
-                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                 ></path>
-                <path
-                        stroke-linecap="round"
+                <path stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
                         d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
@@ -62,10 +59,7 @@
             </svg>
         </a>
         <div class="-mr-4 flex items-center">
-            <a
-                    class="text-sky-500 duration-200 hover:rotate-6 md:hidden"
-                    href="{{route('home')}}"
-            >
+            <a class="text-sky-500 duration-200 hover:rotate-6 md:hidden" href="{{route('home')}}">
                 <svg
                         class="h-8 w-8"
                         fill="none"
@@ -86,24 +80,20 @@
                 </svg>
             </a>
             <div class="ml-8 hidden space-x-8 md:flex">
-                <a
-                        class="px-3 py-2 {{ request()->routeIs('home')? 'text-sky-500' : 'text-slate-600 transition-colors hover:text-sky-500 dark:text-slate-400 dark:hover:text-sky-500'}}"
+                <a class="px-3 py-2 {{ request()->routeIs('home')? 'text-sky-500' : 'text-slate-600 transition-colors hover:text-sky-500 dark:text-slate-400 dark:hover:text-sky-500'}}"
                         href="{{route('home')}}"> Home
                 </a>
-                <a
-                        class="px-3 py-2 {{ request()->routeIs('posts.*')? 'text-sky-500' : 'text-slate-600 transition-colors hover:text-sky-500 dark:text-slate-400 dark:hover:text-sky-500'}}"
+                <a class="px-3 py-2 {{ request()->routeIs('posts.*')? 'text-sky-500' : 'text-slate-600 transition-colors hover:text-sky-500 dark:text-slate-400 dark:hover:text-sky-500'}}"
                         href="{{route('posts.index')}}"
                 >
                     Blog
                 </a>
-                <a
-                        class="px-3 py-2 {{ request()->routeIs('about')? 'text-sky-500' : 'text-slate-600 transition-colors hover:text-sky-500 dark:text-slate-400 dark:hover:text-sky-500'}}"
+                <a class="px-3 py-2 {{ request()->routeIs('about')? 'text-sky-500' : 'text-slate-600 transition-colors hover:text-sky-500 dark:text-slate-400 dark:hover:text-sky-500'}}"
                         href="{{route('about')}}"
                 >
                     About
                 </a>
-                <a
-                        class="px-3 py-2 {{ request()->routeIs('contact')? 'text-sky-500' : 'text-slate-600 transition-colors hover:text-sky-500 dark:text-slate-400 dark:hover:text-sky-500'}}"
+                <a class="px-3 py-2 {{ request()->routeIs('contact')? 'text-sky-500' : 'text-slate-600 transition-colors hover:text-sky-500 dark:text-slate-400 dark:hover:text-sky-500'}}"
                         href="{{route('contact')}}"
                 >
                     Contact
@@ -111,10 +101,9 @@
             </div>
         </div>
 
-        <div class="flex">
-            <div class="relative pt-1">
-                <button
-                        id="toggle-theme-menu"
+        <div class="flex items-center pt-1">
+            <div class="relative ">
+                <button id="toggle-theme-menu"
                         class="rounded-full text-slate-500 transition-colors hover:text-sky-500 focus:ring-2 focus:ring-slate-200 focus:ring-offset-1 focus:ring-offset-transparent dark:text-slate-400 dark:hover:text-sky-500 dark:focus:ring-slate-700"
                 >
                     <svg
@@ -165,12 +154,10 @@
                         ></path>
                     </svg>
                 </button>
-                <div
-                        id="theme-menu"
+                <div id="theme-menu"
                         class="absolute right-0 z-20 hidden w-28 overflow-hidden rounded-md bg-white/90 shadow-lg dark:bg-slate-800/90"
                 >
-                    <button
-                            data-theme-option="light"
+                    <button data-theme-option="light"
                             class="flex w-full items-center space-x-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 focus:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-900 dark:focus:bg-slate-900"
                     >
                         <svg
@@ -190,12 +177,10 @@
                         </svg>
                         <span>Light</span>
                     </button>
-                    <button
-                            data-theme-option="dark"
+                    <button data-theme-option="dark"
                             class="flex w-full items-center space-x-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 focus:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-900 dark:focus:bg-slate-900"
                     >
-                        <svg
-                                class="h-6 w-6"
+                        <svg class="h-6 w-6"
                                 fill="none"
                                 stroke="currentColor"
                                 stroke-width="1.5"
@@ -203,8 +188,7 @@
                                 xmlns="http://www.w3.org/2000/svg"
                                 aria-hidden="true"
                         >
-                            <path
-                                    stroke-linecap="round"
+                            <path stroke-linecap="round"
                                     stroke-linejoin="round"
                                     d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
                             ></path>
@@ -234,15 +218,55 @@
                     </button>
                 </div>
             </div>
-            <button
-                    class="ml-4 rounded-full text-slate-500 transition-colors hover:text-sky-500 focus:ring-2 focus:ring-slate-200 focus:ring-offset-1"
-            >
-                <img
-                        class="h-6 w-6 rounded-full"
-                        src="https://ui-avatars.com/api?name=Jorge+Garcia"
-                        alt="Jorge García"
-                />
-            </button>
+            @auth()
+            <x-dropdown>
+                <x-slot:trigger>
+                    <button class="ml-4 rounded-full text-slate-500 transition-colors hover:text-sky-500 focus:ring-2 focus:ring-slate-200 focus:ring-offset-1">
+                        <img class="h-6 w-6 rounded-full"
+                                src="https://ui-avatars.com/api?name={{urlencode(Auth::user()->name)}})"
+                                alt="{{Auth::user()->name}}"
+                        />
+                    </button>
+                </x-slot:trigger>
+                <x-slot:content>
+                    <x-dropdown-link :href="route('dashboard')">
+                        {{__('Dashboard') }}
+                    </x-dropdown-link>
+                    <x-dropdown-link :href="route('profile.edit')">
+                        {{__('Profile') }}
+                    </x-dropdown-link>
+
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <x-responsive-nav-link :href="route('logout')"
+                                               onclick="event.preventDefault();
+                                               this.closest('form').submit();"
+                        >
+                            {{ __('Log Out') }}
+                        </x-responsive-nav-link>
+                    </form>
+
+                </x-slot:content>
+            </x-dropdown>
+            @else
+                <x-dropdown>
+                    <x-slot:trigger>
+                        <button class="ml-4 rounded-full text-slate-500 transition-colors hover:text-sky-500 focus:ring-2 focus:ring-slate-200 focus:ring-offset-1">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                            </svg>
+                        </button>
+                    </x-slot:trigger>
+                    <x-slot:content>
+                        <x-dropdown-link :href="route('login')">
+                            {{__('Login') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('register')">
+                            {{__('Register') }}
+                        </x-dropdown-link>
+                    </x-slot:content>
+                </x-dropdown>
+            @endauth
         </div>
     </div>
     <div
